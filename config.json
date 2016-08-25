@@ -1,0 +1,8 @@
+{
+  "datasources": {
+    "es": {
+      "local_nodes": [ { "host": "127.0.0.1", "port": 9200 } ],
+      "remote_nodes": [ { "host": "10.0.2.15", "port": 8889 } ]
+    }
+  }
+}
