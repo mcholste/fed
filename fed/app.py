@@ -24,7 +24,8 @@ class Fed:
 				dynamically_loaded_modules["datasource." + provider] =\
 					importlib.import_module("datasource." + provider)
 				module_conf = {
-					"path_prefix": provider
+					"path_prefix": provider,
+					"loop": self.loop
 				}
 				for k, v in conf["datasources"][provider].iteritems():
 					module_conf[k] = v
