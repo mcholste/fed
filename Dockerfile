@@ -9,6 +9,7 @@ RUN mkdir -p /opt/fed/conf
 
 # Bundle app source
 COPY . /opt/fed
+ADD config.json /opt/fed/conf/config.json
 
 EXPOSE 8888
 
